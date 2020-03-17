@@ -31,9 +31,9 @@ class SampleControllerTest {
 
     @Test
     public void hello2() throws Exception {
-        this.mockMvc.perform(get("/hello/leica")   // 요청
+        this.mockMvc.perform(get("/hello2")   // 요청
                 .param("name", "leica"))    // Request Parameter
                 .andDo(print()) // 요청과 응답 출력
-                .andExpect(content().string("hello leica"));    // 기대값
+                .andExpect(content().string("hello2 leica"));    // 기대값
     }
 }
