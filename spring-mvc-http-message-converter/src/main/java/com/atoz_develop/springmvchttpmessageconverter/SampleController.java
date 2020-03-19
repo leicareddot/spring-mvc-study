@@ -12,4 +12,10 @@ public class SampleController {
     public @ResponseBody String message(@RequestBody String body) {
         return "hello";
     }
+
+    @GetMapping("/jsonMessage")
+    @ResponseBody
+    public Person jsonMessage(@RequestBody Person person) {
+        return person;
+    }
 }
